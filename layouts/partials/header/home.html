@@ -1,0 +1,34 @@
+<header class="hero is-primary is-bold is-medium">
+  <div class='hero-head'>
+    {{- partial "navbar" . -}}
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class='columns'>
+
+        <div class='branding-logo column is-narrow-tablet'>
+          <div class='logo'>
+            <i class="fab fa-stapsher image is-96x96"></i>
+          </div>
+        </div>
+
+        <div class='branding-info column'>
+          <h1 class="title is-1">
+            {{- .Site.Title -}}
+          </h1>
+
+          {{- with .Description -}}
+          <p class="subtitle is-3">
+            {{- . -}}
+          </p>
+          {{- end -}}
+        </div>
+
+      </div>
+
+      <a class="button is-large" href='{{ "docs" | relURL }}'>Get Started</a>
+
+    </div>
+  </div>
+</header>

@@ -1,0 +1,5 @@
+{{- with .Site.Params.settings.accentColor -}}
+<style>
+:root{--color-accent: {{- . -}};}
+</style>
+{{- end -}}

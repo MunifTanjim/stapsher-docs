@@ -1,0 +1,19 @@
+{{- $docs := .Site.GetPage "section" "docs" -}}
+
+<aside class="menu">
+{{- range sort $docs.Sections ".Params.weight" -}}
+  <p class="menu-label">
+    {{- .Title -}}
+  </p>
+  <ul class="menu-list">
+  {{ range where .Data.Pages "Section" .Section }}
+    {{- $isCurrent := ( eq .Permalink $.Permalink ) -}}
+    <li>
+      <a href='{{ .Permalink | relURL }}' {{- if $isCurrent }} class='is-active' {{- end -}}>
+        {{- .LinkTitle -}}
+      </a>
+    </li>
+  {{- end -}}
+  </ul>
+{{- end -}}
+</aside>

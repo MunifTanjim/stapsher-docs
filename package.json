@@ -1,0 +1,35 @@
+{
+  "name": "stapsher-docs",
+  "description": "Documentation site for Stapsher",
+  "version": "0.1.0",
+  "author": "MunifTanjim (https://muniftanjim.com)",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "start": "hugo server --disableFastRender",
+    "watch": "webpack --watch --progress --colors"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "bulma": "^0.7.1",
+    "es6-docready": "^1.0.0"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.6.0",
+    "autoprefixer": "^8.5.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^2.1.4"
+  }
+}

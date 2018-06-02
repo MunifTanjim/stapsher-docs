@@ -1,0 +1,42 @@
+"/encrypt/{string}":
+  method: GET
+  params:
+    "{string}": Text to encrypt
+  description: Returns the Encrypted `{string}`
+  links:
+    - name: EncryptedString
+      url: /docs/config/encrypted-string
+
+"/{platform}/{username}/{repository}/{branch}/{entryType}/new":
+  method: POST
+  params:
+    "{platform}": "Git Platform (`github` / `gitlab`)"
+    "{username}": Username
+    "{repository}": Repository's name
+    "{branch}": Repository Branch
+    "{entryType}": Type of entry
+  body:
+    type: Object
+    params:
+      fields: Object (containing the main data)
+      options: Object (containing additional data)
+  links:
+    - name: Usage with HTML Forms
+      url: /docs/api/usage#html-forms
+
+"/{platform}/{username}/{repository}/{branch}/{entryType}/verify/akismet":
+  method: GET
+  params:
+    "{platform}": "Git Platform (`github` / `gitlab`)"
+    "{username}": Username
+    "{repository}": Repository's name
+    "{branch}": Repository Branch
+    "{entryType}": Type of entry
+  description: Checks if the `akismet` configuration in `stapsher.yaml` is valid.
+
+"/github/webhook":
+  method: POST
+  description: Receives Webhooks for various GitHub App Events
+  links:
+    - name: GitHub Webhooks
+      url: https://developer.github.com/webhooks

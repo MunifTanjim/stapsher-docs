@@ -1,0 +1,80 @@
+akismet.apiKey:
+  links:
+    - name: Encrypted String
+      url: /docs/config/encrypted-string
+
+akismet.enable:
+  example: true
+
+akismet.fields.author:
+  example: author
+
+akismet.fields.authorEmail:
+  example: email
+
+akismet.fields.authorUrl:
+  example: site
+
+akismet.fields.content:
+  example: comment
+
+akismet.siteUrl:
+  example: https://extrastatic.xyz
+
+akismet.type:
+  example: comment
+
+allowedFields:
+  example: '["author","email","comment","site"]'
+
+branch:
+  example: master
+
+commitMessage:
+  example: "add new comment by {fields.author} <Stapsher>"
+  links:
+    - name: Placeholders
+      url: /docs/config/placeholders
+
+extension:
+  example: yaml
+
+filename:
+  example: "{_date~unix}.{_id}"
+  links:
+    - name: Placeholders
+      url: /docs/config/placeholders
+
+format:
+  example: yaml
+
+generatedFields:
+  example: "\ntimestamp:\n  type: date\n  options:\n    format: unix"
+  links:
+    - name: Generated Fields
+      url: /docs/config/generated-fields
+
+moderation:
+  example: false
+
+path:
+  example: "data/comments"
+  links:
+    - name: Placeholders
+      url: /docs/config/placeholders
+
+pullRequestBody:
+
+recaptcha.enable:
+  example: false
+
+recaptcha.secretKey:
+  links:
+    - name: Encrypted String
+      url: /docs/config/encrypted-string
+
+requiredFields:
+  example: '["author","comment","email"]'
+
+transforms:
+  example: "\nemail: hash~md5"

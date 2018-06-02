@@ -1,0 +1,39 @@
+.navbar-brand {
+  .logo {
+    margin-right: 0.25em;
+  }
+}
+
+.branding-logo {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.config-option-cards {
+  .card {
+    margin-bottom: 1em;
+
+    &.is-active {
+      .card-content {
+        display: block;
+      }
+
+      .card-header-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .tag {
+      align-self: center;
+      margin-right: 1em;
+    }
+  }
+
+  .card-content {
+    display: none;
+  }
+}

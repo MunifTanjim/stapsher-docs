@@ -1,0 +1,16 @@
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Stapsher</strong> by <a href="https://muniftanjim.com" target='_blank'>Munif Tanjim</a>. The source code is licensed under
+        <a href="https://github.com/extraStatic/stapsher/blob/master/LICENSE" target='_blank'>MIT</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src='{{ print "/assets/js/" .Site.Data.assets.main.js | relURL }}'></script>
+
+{{- range .Site.Params.assets.customJS -}}
+  <script src='{{ . | relURL }}'></script>
+{{- end -}}

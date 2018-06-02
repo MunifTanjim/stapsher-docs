@@ -1,0 +1,51 @@
+baseURL = "https://stapsher.netlify.com"
+title = "Stapsher"
+
+enableRobotsTXT = true
+pygmentsCodefences = true
+
+enableEmoji = true
+
+defaultContentLanguage = "en"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = []
+customJS = []
+
+[params.info]
+description = "API service for handling user-generated contents on static sites"
+title404 = "Nothing's here!"
+
+[params.settings]
+accentColor = "#663399"
+
+[params.opengraph.facebook]
+admins = [] # array of Facebook IDs
+appID = ""
+author = "MunifTanjim"
+pageID = ""
+
+[params.opengraph.twitter]
+creator = "MunifTanjim"
+page = "extraStatic" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[permalinks]
+page = "/:slug/"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/extraStatic/stapsher"
+
+[languages]
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1

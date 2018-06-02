@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{- partial "head/head" . -}}
+
+<body class='{{- partial "data/bodyClasses" . -}}'>
+
+  {{- partial "header/home" . -}}
+
+  <main class='section'>
+      <div class='container'>
+      <div class='columns'>
+        <div class='column is-three-quarters'>
+          {{- block "main" . -}}
+          {{- end -}}
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {{- partial "footer" . -}}
+
+</body>
+
+</html>

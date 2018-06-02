@@ -1,0 +1,16 @@
+@import 'font-faces';
+
+/*****************
+ # Bulma
+*****************/
+$family-primary: 'Ubuntu', system-ui, sans-serif;
+$footer-background-color: transparent;
+$primary: #663399;
+
+@import '../bulma.sass';
+
+/*****************
+ # Others
+*****************/
+@import 'typography';
+@import 'layouts';

@@ -1,0 +1,60 @@
+<div class='api-endpoint-boxes'>
+
+{{- range $url, $info := .Site.Data.api_endpoints -}}
+<div class="box">
+  <h4>
+    <code>{{- $url -}}</code>
+  </h4>
+
+  <p>
+    <strong>Method</strong>: <span class='tag is-dark is-medium'>{{- $info.method -}}</span>
+  </p>
+
+  {{- if $info.params -}}
+  <p>
+    <strong>Parameters</strong>:
+    <ul>
+    {{- range $key, $desc := $info.params -}}
+      <li>
+        <code>{{- $key -}}</code>: {{ $desc | markdownify }}
+      </li>
+    {{- end -}}
+    </ul>
+  </p>
+  {{- end -}}
+
+  {{- with $info.body -}}
+  <p>
+    <strong>Body:</strong>
+    <ul>
+    {{- range $key, $desc := .params -}}
+      <li>
+        <code>{{- $key -}}</code>: {{ $desc | markdownify }}
+      </li>
+    {{- end -}}
+    </ul>
+  </p>
+  {{- end -}}
+
+  {{- with $info.description -}}
+  <p>
+    <strong>Description</strong>: {{ . | markdownify }}
+  </p>
+  {{- end -}}
+
+  {{- if $info.links -}}
+  <p class="tags">
+    <strong>Additonal Information</strong>:
+    <div class="tags">
+      {{- range $info.links -}}
+      <a class="tag is-link is-large" href='{{- .url | relURL -}}'>
+        {{- .name -}}
+      </a>
+      {{- end -}}
+    </div>
+  </p>
+  {{- end -}}
+</div>
+{{- end -}}
+
+</div>

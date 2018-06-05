@@ -4,13 +4,10 @@ akismet.apiKey:
       url: /docs/config/encrypted-string
 
 akismet.enable:
-  example: true
 
 akismet.fields.author:
-  example: author
 
 akismet.fields.authorEmail:
-  example: email
 
 akismet.fields.authorUrl:
   example: site
@@ -22,13 +19,11 @@ akismet.siteUrl:
   example: https://extrastatic.xyz
 
 akismet.type:
-  example: comment
 
 allowedFields:
   example: '["author","email","comment","site"]'
 
 branch:
-  example: master
 
 commitMessage:
   example: "add new comment by {fields.author} <Stapsher>"
@@ -55,7 +50,6 @@ generatedFields:
       url: /docs/config/generated-fields
 
 moderation:
-  example: false
 
 path:
   example: "data/comments"
@@ -66,7 +60,6 @@ path:
 pullRequestBody:
 
 recaptcha.enable:
-  example: false
 
 recaptcha.secretKey:
   links:

@@ -16,22 +16,22 @@
   },
   "akismet.fields.author": {
     "doc": "Field name for the entry Author's Name",
-    "default": "",
+    "default": "author",
     "format": "String"
   },
   "akismet.fields.authorEmail": {
     "doc": "Field name for the entry Author's Email",
-    "default": "",
+    "default": "email",
     "format": "String"
   },
   "akismet.fields.authorUrl": {
     "doc": "Field name for the entry Author's URL",
-    "default": "",
+    "default": "url",
     "format": "String"
   },
   "akismet.fields.content": {
     "doc": "Field name for the entry Content",
-    "default": "",
+    "default": "content",
     "format": "String"
   },
   "akismet.type": {

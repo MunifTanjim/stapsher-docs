@@ -5,7 +5,7 @@ description: API service for handling user-generated contents on static sites
 
 ## Stapsher, what?
 
-**Stapsher** is an API service that let's you store user-generated contents as static files right alongside your site's contents in a _**git repository**_.
+**Stapsher** is an API service that let's you store user-generated contents as static data files right alongside your site's contents in a _**git repository**_.
 
 ## Stapsher, why?
 
@@ -31,6 +31,15 @@ Handling user-generated contents on static sites is a hassle. Usually you have t
 - Total control over User Interface
 
 ## Stapsher, how?
+
+In short:
+
+- Receives user-generated contents
+- Validates & processes them
+- Generates static data file
+- Pushes the data file to git repository
+
+## Where do I start?
 
 You can use our Public API hosted at `https://stapsher.extrastatic.xyz`:
 

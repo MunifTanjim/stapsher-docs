@@ -11,7 +11,7 @@
   },
   "akismet.siteUrl": {
     "doc": "Site URL form the Akismet account",
-    "default": null,
+    "default": "",
     "format": "String"
   },
   "akismet.fields.author": {

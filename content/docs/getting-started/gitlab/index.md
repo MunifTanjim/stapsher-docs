@@ -14,6 +14,8 @@ Go to your GitLab project's **Settings** > **Members** > **Add member**:
 
 Add `stapsher` as a member with minimum role permission of **_Developer_**.
 
+If you're using a [Protected branch](https://docs.gitlab.com/ce/user/project/protected_branches.html#using-the-allowed-to-merge-and-allowed-to-push-settings), make sure `stapsher` is allowed to push.
+
 ## Step 2: Add configuration file: `stapsher.yaml`
 
 Stapsher looks for `stapsher.yaml` at the root of your site's repository. You can fine-tune Stapsher's behavior in this file.

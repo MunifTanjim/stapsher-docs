@@ -3,7 +3,7 @@
 {{- else -}}
   {{- if .IsPage -}}
     {{- .Summary -}}
-      {{- else -}}
+  {{- else -}}
     {{- with .Site.Params.info.description -}}
       {{- . -}}
     {{- end -}}
